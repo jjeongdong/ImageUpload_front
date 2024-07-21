@@ -5,9 +5,9 @@ const ImageList = () => {
   const [images] = useContext(ImageContext);
   const imgList = images.map((image) => (
     <img 
-      key={image.key} 
-      style={{ width: "100%" }} 
-      src={`http://localhost:4000/uploads/${image.key}`}
+      key={image.imgUrl} 
+      style={{ width: "30%" }} 
+      src={`https://d2m32896w1lzfe.cloudfront.net/w140/${image.key}`}
     />
   ));
 
